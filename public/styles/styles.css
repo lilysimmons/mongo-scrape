@@ -1,5 +1,5 @@
-#deadspin {
-    background: url('/images/deadspin.png') no-repeat center center fixed;
+.jumbotron {
+    background: url('https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwj2jujh96DhAhWSct8KHULVABEQjRx6BAgBEAU&url=https%3A%2F%2Ffontmeme.com%2Fthe-onion-font%2F&psig=AOvVaw162acuU2UvmKvPiBOrgNdD&ust=1553728475768055') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;

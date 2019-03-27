@@ -1,26 +1,36 @@
+<div class="container">
+
+  <div class="row">
+
+    <div class="col-md-6" id="articleSection">
+
+      {{#if article}}
 
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color:turquoise">
-  <a class="navbar-brand" href="#">Onion News Scraper</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarText">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <button class="nav-link" href="#">Saved Articles</button>
-      </li>
-      <li class="nav-item">
-        <button class="nav-link" href="#">Scrape New</button>
-      </li>
-    </ul>
-    <span class="navbar-text">
-    </span>
-  </div>
-</nav>
+      {{#each article}}
+      <p>{{this.title}}</p>
+      <a href={{this.link}}>
+        <p>Link to original article</p>
+      </a>
+      <p>{{this.summary}}</p>
+      <button type="button" class="btn btn-secondary leaveComment" data-id={{this._id}}>Leave Comment</button>
+      {{!-- <button type="button" class="btn btn-secondary saveArticle" data-id={{this._id}}>Save article</button> --}}
+      <br>
+      {{/each}}
+
+      {{else}}
+      <h3>There are no new articles. Please click on "Scrape" button.</h3>
+      {{/if}}
+
+    </div>
+
+    <div class="col-md-6" id="noteSection"></div>
+  
+
+      
 
 
-<script src="/public/js/app.js"></script>
+
+
+
+
