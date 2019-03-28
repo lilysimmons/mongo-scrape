@@ -182,7 +182,8 @@ app.get("/articles/:id"), function (req, res) {
 
 
 // Listen on port 8000
-app.listen(8000, function () {
+
+app.listen(PORT, function () {
   console.log("App running on port 8000!");
 });
 
