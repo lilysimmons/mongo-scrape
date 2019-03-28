@@ -43,6 +43,7 @@ $(document).on("click", ".leaveComment", function() {
           $("#titleinput").val(data.note.title);
           // Place the body of the note in the body textarea
           $("#bodyinput").val(data.note.body);
+          
         }
       });
   });
@@ -109,9 +110,7 @@ $(document).on("click", "#savenote", function() {
         // Empty the notes section
         $("#noteSection").empty();
       });
-  // Also, remove the values entered in the input and textarea for note entry
-  $("#titleinput").val("");
-  $("#bodyinput").val("");
+  
 });
     
 
