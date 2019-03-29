@@ -9,7 +9,7 @@ This full stack web application lets users view and leave comments on the latest
 
 `express`, `express-handlebars`, `mongoose`, `cheerio`, `axois`
 
-## UI
+## User Interface
 ![landing-page](public/images/scraper.png)
 
 ## Database
