@@ -116,6 +116,22 @@ app.get("/articles", function (req, res) {
     });
 });
 
+//shows all notes as json
+app.get("/notes", function (req, res) {
+
+  Note.find({})
+    .then(function (results) {
+      console.log(results);
+
+      res.json(results);
+
+    })
+    .catch(function (err) {
+      res.json(err);
+    });
+});
+
+
 // Route to clear the articles
 app.delete("/articles", function (req, res) {
   Article.remove({})
