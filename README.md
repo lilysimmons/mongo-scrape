@@ -14,11 +14,11 @@ This full stack web application lets users view and leave comments on the latest
 
 ## Database
 
-the /articles route will show all the articles as json
+the /articles route will show all the articles saved to the database as json
 
 ![article-json](public/images/articles-json.png)
 
-the /notes route will show all the notes as json
+the /notes route will show all the notes saved to the data base as json
 
 ![note-json](public/images/notes-json.png)
 
