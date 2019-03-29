@@ -9,9 +9,18 @@ This full stack web application lets users view and leave comments on the latest
 
 `express`, `express-handlebars`, `mongoose`, `cheerio`, `axois`
 
-
+## UI
 ![landing-page](public/images/scraper.png)
 
+## Database
+
+the /articles route will show all the articles as json
+
+![article-json](public/images/articles-json.png)
+
+the /notes route will show all the notes as json
+
+![note-json](public/images/notes-json.png)
 
 ### Technologies Implemented
 
