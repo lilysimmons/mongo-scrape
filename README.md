@@ -1,4 +1,4 @@
-# Mongoose-Scraper
+# Mongo-Scraper
 
 ### Overview
 
